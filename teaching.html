@@ -59,6 +59,22 @@ will talk about the MapReduce framework, distributed file systems like HDFS and 
         </div>
         
         <div id="content">
+        <h2>Preamble to the Colab notebook</h2>
+        Insert this at the beginning of every Colab notebook.
+        <hr>
+        <code>
+        !apt-get install openjdk-8-jdk-headless -qq > /dev/null <br>
+        import os <br>
+        os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-8-openjdk-amd64" <br>
+        !update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java <br>
+        !java -version <br>
+        !pip install pyspark
+        </code>
+        
+        
+        </div>
+        
+        <div id="content">
         <h2> Course Material </h2>  
         <table style="width:100%">
               <tr>
@@ -146,7 +162,7 @@ will talk about the MapReduce framework, distributed file systems like HDFS and 
               </tr>
               
               <tr bgcolor="#E2FFB3">  
-                <td> Dec 2, 2019 </td>
+                <td> Dec 3, 2019 </td>
                 <td> Clustering </td>
                 <td> <a href="./material/8-Clustering/mllib.pdf"> Recap and clustering </a> </td>
                 <td> live </td>
